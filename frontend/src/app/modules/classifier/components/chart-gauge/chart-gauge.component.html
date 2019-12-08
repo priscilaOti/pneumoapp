@@ -1,0 +1,27 @@
+<div class="container">
+  <div *ngIf="isMobile" class="row mobile-message">
+      <img src="https://static.thenounproject.com/png/126349-200.png" alt="Deslize para ver os Resultados" width="40px" height="40px"/>
+      <p>Deslize para ver os Resultados</p>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <h3>Resultados da predição</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <ngx-gauge [type]="gaugeType" [value]="gaugeValue" [label]="gaugeLabel" [append]="gaugeAppendText" [thresholds]="thresholdConfig">
+      </ngx-gauge>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md">
+      <strong>
+        TGI - Identificador de Pacientes com Pneumonia a partir da imagem de Raio-X
+      </strong>
+      <br/>
+      <small><strong>Integrantes:</strong> Priscila de Carvalho Otoni, Wellington Eugenio do Santos</small><br />
+      <small><strong>Orientador:</strong> Ivan Carlos Alcântara de Oliveira</small>
+    </div>
+  </div>
+</div>

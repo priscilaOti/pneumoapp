@@ -1,0 +1,11 @@
+{
+   "prediction":"PNEUMONIA",
+   "probabilities": {
+       "NORMAL":0.028,
+       "PNEUMONIA":0.972
+    },
+    "success":true
+}
+
+
+

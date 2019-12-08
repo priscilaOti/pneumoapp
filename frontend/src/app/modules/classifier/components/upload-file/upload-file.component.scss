@@ -1,0 +1,129 @@
+@import '../../../../shared/styles/variables';
+/*
+.custom-file, .custom-file-input {
+  cursor: pointer;
+}
+
+.custom-file  .custom-file-label{
+  cursor: pointer;
+
+  &::after {
+    content: "Escolher arquivo" !important;
+  }
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 250px;
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+    .btn-sm {
+      align-self: flex-end;
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+    }
+  }
+}
+*/
+
+.flipcard {
+  font-family: arial;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  perspective: 700px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  text-align: center;
+  z-index: 1029;
+}
+
+.flipcard_front,
+.flipcard_back {
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: $white-color;
+}
+
+.flipcard_front {
+  -webkit-transform: translate(-50%, -50%) rotateY(0deg);
+  -ms-transform: translate(-50%, -50%) rotateY(0deg);
+  transform: translate(-50%, -50%) rotateY(0deg);
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background: $base-color;
+
+  &.danger {
+    background: #f44336;
+  }
+}
+
+.flipcard.active .flipcard_front {
+  -webkit-transform: translate(-50%, -50%) rotateY(180deg);
+  -ms-transform: translate(-50%, -50%) rotateY(180deg);
+  transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.flipcard_back {
+  -webkit-transform: translate(-50%, -50%) rotateY(180deg);
+  -ms-transform: translate(-50%, -50%) rotateY(180deg);
+  transform: translate(-50%, -50%) rotateY(180deg);
+  color: $white-color;
+  background: $base-color;
+}
+
+.flipcard.active .flipcard_back {
+  -webkit-transform: translate(-50%, -50%) rotateY(360deg);
+  -ms-transform: translate(-50%, -50%) rotateY(360deg);
+  transform: translate(-50%, -50%) rotateY(360deg);
+}
+
+
+
+.uploadfilecontainer {
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: center;
+  height: calc(100vh - 126px);
+
+  @media (max-width: 767px) {
+    height: 320px;
+  }
+
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  align-items: center;
+  margin: 20px auto;
+  border: 2px dashed $white-color;
+  border-radius: 10px;
+  transition: all 500ms;
+}
+
+.uploadfilecontainer:hover {
+  cursor: pointer;
+  background-color: rgba(233, 244, 250, 0.2) !important;
+  opacity: 0.8;
+}

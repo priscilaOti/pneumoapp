@@ -1,0 +1,26 @@
+@import '../../../../shared/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.col-md {
+  text-align: center;  
+}
+
+h3, strong {
+  color: $title-color;
+}
+
+.mobile-message {
+  margin-top: -0.95rem;
+
+  p {
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+  }
+}

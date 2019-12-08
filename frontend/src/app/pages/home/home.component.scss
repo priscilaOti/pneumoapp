@@ -1,0 +1,28 @@
+@import "../../shared/styles/variables";
+
+.full-height {
+  height: calc(100vh);
+  padding-top: 56px;
+
+  @media (max-width: 767px) {
+    &:first-child {
+      height: 450px;
+    }
+  }
+}
+
+.bg-dark {
+  background-color: transparent!important;
+  padding-top: 90px;
+}
+
+.bg-light {
+  color: $text-color;
+}
+
+.container-fluid {
+  @media only screen and (min-width: 600px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

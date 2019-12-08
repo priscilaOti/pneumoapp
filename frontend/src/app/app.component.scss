@@ -1,0 +1,7 @@
+.wrapper {
+  background: #f8f9fa !important;
+  overflow: hidden;
+  @media (max-width: 767px) {
+    overflow: visible;
+  }
+}
