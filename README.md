@@ -1,7 +1,7 @@
 # Identificador de Pacientes com Pneumonia a partir da imagem de raio-x (PneumoApp)
 
 ___
-##### _TGI - trabalho de graduação interdisciplinar para a conclusão do curso de Ciência da computação na universidade Cruzeiro do Sul._
+##### _TGI - trabalho de graduação interdisciplinar para a conclusão do curso de Ciência da Computação na Universidade Cruzeiro do Sul._
 
 ###### _Orientador: Ivan Carlos Alcântara de Oliveira._
 
